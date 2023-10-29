@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.UUID;
 
-@FeignClient(name = "car-service", url = "http://rsoi-2-gateway-1:8080/api/v1/cars")
+@FeignClient(name = "car-service", url = "http://gateway:8080/api/v1/cars")
 public interface CarService {
     String URL_GET_CAR_BY_CARUID = "/{carUid}";
 

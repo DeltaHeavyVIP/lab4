@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.UUID;
 
-@FeignClient(name = "payment-service", url = "http://rsoi-2-gateway-1:8080/api/v1/payment")
+@FeignClient(name = "payment-service", url = "http://gateway:8080/api/v1/payment")
 public interface PaymentService {
 
     String URL_GET_PAYMENT_INFO_BY_PAYMENTUID = "/{paymentUid}";

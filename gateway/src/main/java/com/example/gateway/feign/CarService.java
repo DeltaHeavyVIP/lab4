@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.UUID;
 
-@FeignClient(name = "car-service", url = "http://rsoi-2-car-1:8070/api/v1/cars")
+@FeignClient(name = "car-service", url = "http://car:8070/api/v1/cars")
 public interface CarService {
 
     String URL_GET_ALL_AVAILABILITY_CAR = "";

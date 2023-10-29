@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import java.util.List;
 import java.util.UUID;
 
-@FeignClient(name = "rental-service", url = "http://rsoi-2-rental-1:8060/api/v1/rental")
+@FeignClient(name = "rental-service", url = "http://rental:8060/api/v1/rental")
 public interface RentalService {
 
     String URL_GET_ALL_RENTAL = "";
